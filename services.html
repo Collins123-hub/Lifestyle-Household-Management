@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifestyle House Management</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-sizing: border-box;
+        }
+
+        /* Color Scheme */
+        :root {
+            --primary-color: #5D1049; /* Deep purple */
+            --secondary-color: #E1D89F; /* Light beige */
+            --accent-color: #C7B198; /* Muted brown */
+            --text-color: #fff;
+        }
+
+        /* Centered section */
+        .centered-section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Bold title */
+        .services-title {
+            font-weight: bold;
+             font-size: 3em; /* Adjust font size */
+            margin: 0; /* Remove default margin */
+            color: var(--primary-color);
+        }
+
+    
+        /* Navigation */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            padding: 10px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar li {
+            padding: 0 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: var(--text-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('img.jpg') no-repeat center center/cover;
+            height: 12vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black; /* Change text color to black */
+            text-align: center; /* Center the text */
+            padding: 0 20px; /* Add padding */
+        }
+
+        .hero h1 {
+            font-size: 5em; /* Adjust font size */
+            margin: 0; /* Remove default margin */
+            color: var(--primary-color);
+        }
+
+    
+        /* Cards */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: var(--secondary-color);
+        }
+
+        .card {
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            margin: 10px;
+            flex-basis: 45%;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero {
+                height: 30vh;
+            }
+
+            .card-container {
+                flex-direction: column;
+            }
+
+            .card {
+                flex-basis: 90%;
+            }
+        }
+
+        /* Button Style */
+        .button {
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div> 
+            <img src="logo.png" alt="Logo" width="27" height="27">
+        </div>
+        <nav>
+            <ul>
+                  <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li> <!-- Link to services page -->
+            </ul>
+        </nav>
+    </div>
+
+    <div class="hero">
+        <h1>Lifestyle House Management</h1>
+    
+    </div>
+
+     <div class="centered-section">
+        <h2 class="services-title">OUR SERVICES</h2>
+    </div>
+
+    <div class="services-section">
+
+    <div class="card-container">
+    <div class="card">
+        <h2>House manager placement</h2>
+        <p>Matching households with skilled and reliable house managers to oversee various aspects including, cleaning, organizing, and maintenance.</p>
+    </div>
+    <div class="card">
+        <h2>Nanny placement</h2>
+        <p>Matching families with qualified and experienced nannies, meeting specific requirements for childcare.</p>
+    </div>
+    <div class="card">
+        <h2>Temporary and on demand care</h2>
+        <p>Providing occasional childcare or house managing services for families who need assistance due to work commitments, travel, illness, or other needs.</p>
+    </div>
+    <div class="card">
+        <h2>Specialized care</h2>
+        <p>Providing special services for families with unique needs like families with special children.</p>
+    </div>
+    <div class="card">
+        <h2>Backup care</h2>
+        <p>Providing backup care options for families in case the regular caregiver is unavailable due to illness, vacation, or other reasons.</p>
+    </div>
+</div>
+
+
+    <footer>
+        <p>© 2024 Lifestyle House Management. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
