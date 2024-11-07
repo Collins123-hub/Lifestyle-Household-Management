@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifestyle House Management</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-sizing: border-box;
+        }
+
+        /* Color Scheme */
+        :root {
+            --primary-color: #5D1049; /* Deep purple */
+            --secondary-color: #E1D89F; /* Light beige */
+            --accent-color: #C7B198; /* Muted brown */
+            --text-color: #fff;
+        }
+
+        /* Navigation */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            padding: 10px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar li {
+            padding: 0 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: var(--text-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('img.jpg') no-repeat center center/cover; 
+            height: 20vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black; /* Change text color to black */
+            text-align: center; /* Center the text */
+            padding: 0 20px; /* Add padding */
+        }
+
+        .hero h1 {
+            font-size: 5em; /* Adjust font size */
+            margin: 0; /* Remove default margin */
+            color: var(--primary-color);
+        }
+
+    
+        /* Cards */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: var(--secondary-color);
+        }
+
+        .card {
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            margin: 10px;
+            flex-basis: 45%;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero {
+                height: 30vh;
+            }
+
+            .card-container {
+                flex-direction: column;
+            }
+
+            .card {
+                flex-basis: 90%;
+            }
+        }
+
+        /* Button Style */
+        .button {
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div>
+             <img src="logo.png" alt="Logo" width="27" height="27">
+        </div>
+        <nav>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="hero">
+        <h1>Lifestyle House Management</h1>
+    
+    </div>
+
+    <div class="card-container">
+        <div class="card">
+            <img src="img1.jpg" alt="Diaper changing" style="width:100%; height:auto;">
+            <h2>ABOUT US</h2>
+            <p>At Lifestyle House Managing company we understand the unique challenges faced by modern families juggling busy schedules, careers and household responsiblities. Thats why we are dedicated to providing tailored childcare and household management solutions to help families thrive.</p>
+        </div>
+        <div class="card">
+            <img src="img3.jpg" alt="Cleaning lady" style="width:100%; height:auto;">
+            <h2>MISSION</h2>
+            <p>Empowering families to thrive by providing exceptional childcare and household management solutions tailored to your unique needs.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Lifestyle House Management. All rights reserved.</p>
+    </footer>
+
+    <!-- Button to Services Page -->
+    <a href="services.html" class="button">Explore Our Services</a>
+</body>
+</html>
+
